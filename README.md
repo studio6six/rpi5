@@ -56,26 +56,28 @@ A descriptive hostname makes it easier to identify your Pi on the network.  You 
 
 ```bash
 sudo raspi-config
+```
 Navigate to "System Options" -> "Hostname" and follow the prompts. Alternatively, you can edit the /etc/hostname and /etc/hosts files directly, but raspi-config is generally recommended.
 
-We will use the hostname **pilab**
+We will rename the hostname from raspberrypi to  **pilab**
 
-Step 3: Configure SSH (Essential for Headless Configuration)
+**Step 3: Configure SSH (Essential for Headless Configuration)**
 
 SSH allows you to access and manage your Pi remotely. It's crucial for headless operation. Enable SSH using raspi-config:
 
-Bash
-
+```Bash
 sudo raspi-config
+```
 Go to "Interface Options" -> "SSH" and enable it.
 
-Step 4: Assign the Pi a Static IP Address on the Home Network
+**Step 4: Assign the Pi a Static IP Address on the Home Network**
 
 A static IP address ensures that your Pi always has the same IP, making it easier to connect to. This is usually done through your router's configuration interface.
 
 Router Configuration (Recommended): Find the Pi's current IP address (check your router), then reserve or assign that IP to the Pi's MAC address in your router's DHCP settings. This process varies depending on your router model, so consult its documentation.
 Static IP on Pi (Alternative): You can configure a static IP directly on the Pi, but managing it through the router is generally preferred.
-Step 5: Connect via SSH and Begin Configuration
+
+**Step 5: Connect via SSH and Begin Configuration**
 
 Once the static IP is set (and your Pi has rebooted to use it), you can connect to your Pi using SSH from another computer on your network. Open a terminal or SSH client and use the following command (replace pi with your username and 192.168.1.100 with your Pi's static IP):
 
