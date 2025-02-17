@@ -1,3 +1,34 @@
-# rpi5
+<div align="center">
+  <h3>
+    <b>
+      RPI5
+    </b>
+  </h3>
+  <b>
+    Homelab setup and configuration using the latest raspberry 5 16gb. 
+  </b>
+  <p>
 
-[![CI](https://github.com/geerlingguy/internet-pi/workflows/CI/badge.svg?event=push)](https://github.com/geerlingguy/internet-pi/actions?query=workflow%3ACI)
+![Static Badge](https://img.shields.io/badge/IoT-Raspberry_Pi_5-%23C51A4A?style=flat)
+  </p>
+  <br />
+</div>
+
+_All file and scripts can be found in the main branch  [**Hoppscotch Documentation**](https://github.com/studio6six/rpi5) to learn more about the app._
+
+
+
+### **Features**
+
+
+## **Demo**
+
+
+## **Developing**
+
+
+
+## **Contributing**
+
+
+
