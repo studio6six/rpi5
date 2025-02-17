@@ -48,8 +48,7 @@ This document outlines the initial setup and configuration of your Raspberry Pi 
 
 Insert the prepared SD card (with Raspberry Pi OS installed) into the Raspberry Pi 5 and power it on.
 
-*   **With Monitor:** If you have a monitor, keyboard, and mouse connected, complete the initial setup wizard. This will typically involve setting your region, language, keyboard layout, and creating a user account.
-*   **Headless Operation:** If you're going headless (no monitor), the Pi will attempt to connect to your network via DHCP. You'll need to find its assigned IP address (check your router's admin interface) to connect to it.
+*   **Monitor, Keyboard & mouse:** Using a monitor and peripherals, complete the initial setup wizard. This will typically involve setting your region, language, keyboard layout, and creating a user account.
 
 **Step 2: Configure the Hostname**
 
