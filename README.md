@@ -33,6 +33,9 @@ I intend to use this as guide
 - **Potential for expansion**: The Pi and containerization allow for easy addition of future services. (This is implied but good to call out)
 - **Cost-effectiveness**: Building a powerful home lab at a potentially lower cost than traditional server hardware. (Also implied, but worth mentioning)
 
+## Raspberry Pi 5
+
+The foundation of this home lab begins with a fresh installation of Raspberry Pi OS (formerly Raspbian) on a high-speed SD card.  This involves downloading the latest Raspberry Pi OS image from the official Raspberry Pi website and flashing it onto the SD card using a tool like the Raspberry Pi Imager.  Once the image is written, the SD card is inserted into the Raspberry Pi 5, and the device is powered on.  The initial boot process involves configuring basic settings such as the hostname, setting up a user account, enabling SSH for remote access (essential for headless operation), and connecting to the local network.  Expanding the file system to utilize the entire SD card capacity is also a crucial first step.  From this point, the Pi is ready for further configuration, including installing necessary software packages and preparing for the Portainer installation, which will form the basis of our application deploymen
 
 ### **Features**
 
