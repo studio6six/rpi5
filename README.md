@@ -35,10 +35,53 @@ I intend to use this as guide
 
 ## Raspberry Pi 5
 
-The foundation of this home lab begins with a fresh installation of Raspberry Pi OS (formerly Raspbian) on a high-speed SD card.  This involves downloading the latest Raspberry Pi OS image from the official Raspberry Pi website and flashing it onto the SD card using a tool like the Raspberry Pi Imager.  Once the image is written, the SD card is inserted into the Raspberry Pi 5, and the device is powered on.  The initial boot process involves configuring basic settings such as the hostname, setting up a user account, enabling SSH for remote access (essential for headless operation), and connecting to the local network.  Expanding the file system to utilize the entire SD card capacity is also a crucial first step.  From this point, the Pi is ready for further configuration, including installing necessary software packages and preparing for the Portainer installation, which will form the basis of our application deploymen
+TThe foundation of this home lab begins with the Official MicroSD Card With Raspberry Pi OS 64-bit - 32GB. The initial boot process involves configuring basic settings such as the hostname, setting up a user account, enabling SSH for remote access (essential for headless operation), and connecting to the local network.  Expanding the file system to utilize the entire SD card capacity is also a crucial first step.  From this point, the Pi is ready for further configuration, including installing necessary software packages and preparing for the Portainer installation, which will form the basis of our application deployment
 
-### **Features**
+### Initial Setup
+ Setting Up Your Raspberry Pi 5 Home Lab
 
+This document outlines the initial setup and configuration of your Raspberry Pi 5 for use as a home lab, focusing on preparing the system for Portainer and application deployment.
+
+## Initial Setup Steps
+
+**Step 1: Boot the Pi and Complete Initial Configuration**
+
+Insert the prepared SD card (with Raspberry Pi OS installed) into the Raspberry Pi 5 and power it on.
+
+*   **With Monitor:** If you have a monitor, keyboard, and mouse connected, complete the initial setup wizard. This will typically involve setting your region, language, keyboard layout, and creating a user account.
+*   **Headless Operation:** If you're going headless (no monitor), the Pi will attempt to connect to your network via DHCP. You'll need to find its assigned IP address (check your router's admin interface) to connect to it.
+
+**Step 2: Configure the Hostname**
+
+A descriptive hostname makes it easier to identify your Pi on the network.  You can change the hostname using `raspi-config`:
+
+```bash
+sudo raspi-config
+Navigate to "System Options" -> "Hostname" and follow the prompts. Alternatively, you can edit the /etc/hostname and /etc/hosts files directly, but raspi-config is generally recommended.
+
+Step 3: Configure SSH (Essential for Headless Configuration)
+
+SSH allows you to access and manage your Pi remotely. It's crucial for headless operation. Enable SSH using raspi-config:
+
+Bash
+
+sudo raspi-config
+Go to "Interface Options" -> "SSH" and enable it.
+
+Step 4: Assign the Pi a Static IP Address on the Home Network
+
+A static IP address ensures that your Pi always has the same IP, making it easier to connect to. This is usually done through your router's configuration interface.
+
+Router Configuration (Recommended): Find the Pi's current IP address (check your router), then reserve or assign that IP to the Pi's MAC address in your router's DHCP settings. This process varies depending on your router model, so consult its documentation.
+Static IP on Pi (Alternative): You can configure a static IP directly on the Pi, but managing it through the router is generally preferred.
+Step 5: Connect via SSH and Begin Configuration
+
+Once the static IP is set (and your Pi has rebooted to use it), you can connect to your Pi using SSH from another computer on your network. Open a terminal or SSH client and use the following command (replace pi with your username and 192.168.1.100 with your Pi's static IP):
+
+Bash
+
+ssh pi@192.168.1.100
+You'll be prompted for your password. After successfully logging in, you can begin the configuration and installation of dependent items for running Portainer, as well as any other software you intend to use.  This includes installing Docker, which is a prerequisite for Portainer.  Further instructions on installing and configuring Portainer will follow in subsequent sections.
 
 
 
