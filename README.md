@@ -35,7 +35,7 @@ I intend to use this as guide
 
 ## Raspberry Pi 5
 
-TThe foundation of this home lab begins with the Official MicroSD Card With Raspberry Pi OS 64-bit - 32GB. The initial boot process involves configuring basic settings such as the hostname, setting up a user account, enabling SSH for remote access (essential for headless operation), and connecting to the local network.  Expanding the file system to utilize the entire SD card capacity is also a crucial first step.  From this point, the Pi is ready for further configuration, including installing necessary software packages and preparing for the Portainer installation, which will form the basis of our application deployment
+The foundation of this home lab begins with the Official MicroSD Card With Raspberry Pi OS 64-bit - 32GB. The initial boot process involves configuring basic settings such as the hostname, setting up a user account, enabling SSH for remote access (essential for headless operation), and connecting to the local network.  Expanding the file system to utilize the entire SD card capacity is also a crucial first step.  From this point, the Pi is ready for further configuration, including installing necessary software packages and preparing for the Portainer installation, which will form the basis of our application deployment
 
 ### Initial Setup
  Setting Up Your Raspberry Pi 5 Home Lab
