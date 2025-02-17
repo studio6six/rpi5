@@ -22,7 +22,7 @@ I've been a Raspberry Pi enthusiast for years, using them for everything from of
 I intend to use this as guide 
 
 ## Features
-**Raspberry Pi 5 as the core**: Leveraging the increased processing power and capabilities of the Pi 5.
+- **Raspberry Pi 5 as the core**: Leveraging the increased processing power and capabilities of the Pi 5.
 **Portainer for container orchestration**: Simplifying application management and deployment.
 MySQL database: Providing a relational database for various applications.
 Postgres database: Offering another robust relational database option.
