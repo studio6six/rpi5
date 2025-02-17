@@ -108,6 +108,10 @@ Docker is a prerequisite for Portainer.  Use the following commands to install D
 ```bash
  curl -sSL https://get.docker.com | sh
 ```
+Note this may take a few minute to complete as it will automatically detect and install everything required for Docker to run on the Raspberry Pi. 
+Once complete you should see something similar to: 
+IMG HERE
+
 ```bash
 sudo usermod -aG docker pi  # Add the 'pi' user to the docker group
 ```
@@ -117,6 +121,8 @@ newgrp docker # Apply group changes without logout
 ```bash
 sudo systemctl enable docker # Enable docker to start at boot
 ```
+Now that docker is installed we are ready to proceed onto the next steps. 
+
 **Step 3: Install Portainer**
 
 We'll use a Docker volume to persist Portainer's data and a Docker container to run Portainer.
@@ -126,4 +132,37 @@ docker volume create portainer_data
 ```bash
 docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
 ```
+
+**Step 1  4: Access Portainer through the Browser**
+
+Once the container is running (it might take a few moments for the initial setup), you can access Portainer by navigating to your Raspberry Pi's IP address on port 9000 in your web browser:
+
+```bash
+http://<your_pi_static_ip>:9000
+```
+Replace **<your_pi_static_ip>** with the actual static IP address of your Raspberry Pi 5.
+
+You will be greeted with the Portainer setup wizard. Create an administrator user and password.  Choose the "Local" Docker environment when prompted, as Portainer will be managing the Docker daemon on your Pi.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
