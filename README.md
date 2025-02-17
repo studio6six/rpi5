@@ -14,7 +14,7 @@
   <br />
 </div>
 
-_All file and scripts can be found in the main branch  [**Hoppscotch Documentation**](https://github.com/studio6six/rpi5) to learn more about the app._
+_All file and scripts can be found in the main branch  [**RPI5 HomeLab**](https://github.com/studio6six/rpi5) to learn more about the app._
 
 
 
