@@ -57,7 +57,9 @@ A descriptive hostname makes it easier to identify your Pi on the network.  You 
 ```bash
 sudo raspi-config
 ```
-Navigate to "System Options" -> "Hostname" and follow the prompts. Alternatively, you can edit the /etc/hostname and /etc/hosts files directly, but raspi-config is generally recommended.
+Navigate to "System Options" -> "Hostname" and follow the prompts. 
+
+Alternatively, you can edit the /etc/hostname and /etc/hosts files directly, but raspi-config is generally recommended.
 
 We will rename the hostname from raspberrypi to  **pilab**
 
@@ -81,9 +83,10 @@ Static IP on Pi (Alternative): You can configure a static IP directly on the Pi,
 
 Once the static IP is set (and your Pi has rebooted to use it), you can connect to your Pi using SSH from another computer on your network. Open a terminal or SSH client and use the following command (replace pi with your username and 192.168.1.100 with your Pi's static IP):
 
-Bash
 
-ssh pi@192.168.1.100
+```Bash
+ssh pi@10.0.0.25
+```
 You'll be prompted for your password. After successfully logging in, you can begin the configuration and installation of dependent items for running Portainer, as well as any other software you intend to use.  This includes installing Docker, which is a prerequisite for Portainer.  Further instructions on installing and configuring Portainer will follow in subsequent sections.
 
 
