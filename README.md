@@ -23,15 +23,15 @@ I intend to use this as guide
 
 ## Features
 - **Raspberry Pi 5 as the core**: Leveraging the increased processing power and capabilities of the Pi 5.
-**Portainer for container orchestration**: Simplifying application management and deployment.
-MySQL database: Providing a relational database for various applications.
-Postgres database: Offering another robust relational database option.
-Grafana for monitoring: Visualizing system performance, application metrics, and other data.
-Home lab functionality: Replacing your existing server setup with the Pi-based solution.
-Compact and efficient design: Taking advantage of the Pi's small footprint and low power consumption.
-Documented build process: Sharing your journey, challenges, and solutions through your blog.
-Potential for expansion: The Pi and containerization allow for easy addition of future services. (This is implied but good to call out)
-Cost-effectiveness: Building a powerful home lab at a potentially lower cost than traditional server hardware. (Also implied, but worth mentioning)
+- **Portainer for container orchestration**: Simplifying application management and deployment.
+- **MySQL database**: Providing a relational database for various applications.
+- **Postgres database**: Offering another robust relational database option.
+- **Grafana for monitoring**: Visualizing system performance, application metrics, and other data.
+- **Home lab functionality**: Replacing your existing server setup with the Pi-based solution.
+- **Compact and efficient design**: Taking advantage of the Pi's small footprint and low power consumption.
+- **Documented build process**: Sharing your journey, challenges, and solutions through your blog.
+- **Potential for expansion**: The Pi and containerization allow for easy addition of future services. (This is implied but good to call out)
+- **Cost-effectiveness**: Building a powerful home lab at a potentially lower cost than traditional server hardware. (Also implied, but worth mentioning)
 
 
 ### **Features**
