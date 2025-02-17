@@ -58,6 +58,8 @@ A descriptive hostname makes it easier to identify your Pi on the network.  You 
 sudo raspi-config
 Navigate to "System Options" -> "Hostname" and follow the prompts. Alternatively, you can edit the /etc/hostname and /etc/hosts files directly, but raspi-config is generally recommended.
 
+We will use the hostname **pilab**
+
 Step 3: Configure SSH (Essential for Headless Configuration)
 
 SSH allows you to access and manage your Pi remotely. It's crucial for headless operation. Enable SSH using raspi-config:
