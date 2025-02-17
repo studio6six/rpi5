@@ -133,7 +133,7 @@ docker volume create portainer_data
 docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
 ```
 
-**Step 1  4: Access Portainer through the Browser**
+**Step 4: Access Portainer through the Browser**
 
 Once the container is running (it might take a few moments for the initial setup), you can access Portainer by navigating to your Raspberry Pi's IP address on port 9000 in your web browser:
 
