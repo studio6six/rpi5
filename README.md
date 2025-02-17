@@ -89,5 +89,41 @@ ssh pi@10.0.0.25
 ```
 You'll be prompted for your password. After successfully logging in, you can begin the configuration and installation of dependent items for running Portainer, as well as any other software you intend to use.  This includes installing Docker, which is a prerequisite for Portainer.  Further instructions on installing and configuring Portainer will follow in subsequent sections.
 
+## Installing and Configuring Portainer
 
+These steps detail how to install Docker and Portainer on your Raspberry Pi 5, enabling container management for your home lab.
+
+**Step 1: Update and Upgrade the Raspberry Pi**
+
+It's crucial to ensure your system packages are up-to-date before installing new software. Connect to your Pi via SSH and run the following commands:
+
+```bash
+sudo apt update
+sudo apt upgrade -y
+```
+**Step 2: Install Docker**
+
+Docker is a prerequisite for Portainer.  Use the following commands to install Docker Engine and Docker Compose:
+
+```bash
+curl -fsSL [https://get.docker.com](https://get.docker.com) | sh
+```
+```bash
+sudo usermod -aG docker pi  # Add the 'pi' user to the docker group
+```
+```bash
+newgrp docker # Apply group changes without logout
+```
+```bash
+sudo systemctl enable docker # Enable docker to start at boot
+```
+**Step 3: Install Portainer**
+
+We'll use a Docker volume to persist Portainer's data and a Docker container to run Portainer.
+```bash
+docker volume create portainer_data
+```
+```bash
+docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
+```
 
