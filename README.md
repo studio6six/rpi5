@@ -106,7 +106,7 @@ sudo apt upgrade -y
 Docker is a prerequisite for Portainer.  Use the following commands to install Docker Engine and Docker Compose:
 
 ```bash
-curl -fsSL [https://get.docker.com](https://get.docker.com) | sh
+ curl -sSL https://get.docker.com | sh
 ```
 ```bash
 sudo usermod -aG docker pi  # Add the 'pi' user to the docker group
