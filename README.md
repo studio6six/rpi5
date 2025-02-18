@@ -1,7 +1,7 @@
 <div align="center">
   <h3>
     <b>
-      RPI5
+      RPI5 - PART 1 Vanilla Setup
     </b>
   </h3>
   <b>
