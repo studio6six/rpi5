@@ -113,7 +113,7 @@ Once complete you should see something similar to:
 IMG HERE
 
 ```bash
-sudo usermod -aG docker pi  # Add the 'pi' user to the docker group
+sudo usermod -aG docker $USER  
 ```
 ```bash
 newgrp docker # Apply group changes without logout
